@@ -77,14 +77,14 @@ fi
 
 # Execute script depending on arguments
 read input
-if [ $input == "packages" ]; then
+if ["$input" == "packages"]; then
 	install_packages
 fi
 
-if [ $input == "folders" ]; then
+if ["$input" == "folders"]; then
 	create_folders
 fi
 
-if [ $input == " " ]; then
+if ["$input" == " "]; then
 	todo
 fi
